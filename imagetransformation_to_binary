@@ -1,0 +1,18 @@
+TRANSFORM THE IMAGE TO BINARY
+Using a threshold
+# Apply a threshold to convert to binary (0 and 1)
+threshold = 128  # Adjust this value if needed
+binary_image = gray_image.point(lambda p: 1 if p > threshold else 0, mode='1')
+
+# Display the binary image
+binary_image.show()
+
+or 
+
+# Convert to binary using a threshold
+threshold = 128  # You can adjust this value (0–255)
+binary_image = gray_image.point(lambda x: 255 if x > threshold else 0, '1')
+
+# Save or show the result
+binary_image.save("binary_image.png")
+binary_image.show()
