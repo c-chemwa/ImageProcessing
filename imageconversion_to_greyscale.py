@@ -2,7 +2,7 @@
 from PIL import Image
 
 # Open an image file
-image = Image.open('/assets/mashle.png')
+image = Image.open('assets/mashle.png')
 
 # Display the image
 image.show()
@@ -14,4 +14,4 @@ gray_image = image.convert('L')
 gray_image.show()
 
 # Save the grayscale image if needed
-gray_image.save('/assets/mashle_gray.png')
+gray_image.save('assets/mashle_gray.png')
